@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>define.nilis.dev</title>
+  <meta name="description" content="nil은 값의 부재가 아니다. 부재의 값이다.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="lang-switch">
+    <a href="index.html" class="lang-link">en</a> / <span class="lang-current">ko</span>
+  </nav>
+
+  <!-- 1. Opening -->
+  <section class="opening">
+    <p class="comment" id="site-title">// define.nilis.dev</p>
+    <p class="tagline">
+      nil은 값의 부재가 아니다.<br>
+      <em>부재의 값이다.</em>
+    </p>
+  </section>
+
+  <!-- 2. Type Annotation -->
+  <section>
+    <pre class="type-block"><span class="keyword">type</span> <span class="type-name">Nil</span> <span class="keyword">struct</span>{}
+
+<span class="comment">// Nil은 필드를 갖지 않지만, 모든 인터페이스를 만족한다.</span>
+<span class="comment">// 아무것도 아닌 것이 무엇이든 될 수 있다면,</span>
+<span class="comment">// 그것을 무엇이라 불러야 하는가?</span></pre>
+  </section>
+
+  <!-- 3. Definitions -->
+  <section>
+    <div class="definitions">
+      <div class="def-row" data-lang="go">
+        <span class="def-term">nil</span>
+        <span class="def-desc">— 영값; 초기화되지 않은 것; 아직 오지 않은 무언가의 약속</span>
+      </div>
+      <div class="def-row" data-lang="c">
+        <span class="def-term">null</span>
+        <span class="def-desc">— 의도된 공백; 있을 수 있었으나 없기로 한</span>
+      </div>
+      <div class="def-row" data-lang="ts">
+        <span class="def-term">void</span>
+        <span class="def-desc">— 아무것도 돌려주지 않는 행위의 반환 타입</span>
+      </div>
+      <div class="def-row" data-lang="js">
+        <span class="def-term">undefined</span>
+        <span class="def-desc">— 없음조차 아님; 이름은 불렸으나 존재하지 않는 것</span>
+      </div>
+      <div class="def-row" data-lang="math">
+        <span class="def-term">∅</span>
+        <span class="def-desc">— 아무것도 담지 않는다는 개념을 담은 그릇</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. /dev/null Meditation -->
+  <section>
+    <div class="terminal">
+      <span class="prompt">$</span> <span class="cmd">echo "내가 만든 모든 것" &gt; /dev/null</span><br>
+      <span class="prompt">$</span><span class="cursor"></span>
+    </div>
+    <div class="meditation">
+      <p>시스템 콜은 성공한다. 바이트는 수락된다.</p>
+      <p>아무것도 불평하지 않는다. 아무것도 저장되지 않는다.</p>
+      <p>이것은 상실인가, 아니면 가장 효율적인 처리의 형태인가?</p>
+    </div>
+  </section>
+
+  <!-- 5. Observer Fragment -->
+  <section>
+    <pre class="code-block"><span style="color:#6a8aaa;opacity:0.7">if</span> (nil == nil) {
+    <span class="comment-accent">// true, 그럼에도—</span>
+    <span class="comment-accent">// 무엇이 비교된 것인가?</span>
+    <span class="comment-accent">// 두 개의 없음, 그 없음에서 동일한</span>
+    <span class="comment-accent">// 비교 그 자체만이 유일하게 존재한다</span>
+}</pre>
+  </section>
+
+  <!-- 6. The Koan -->
+  <section>
+    <p class="koan">변수가 선언되었으나 한 번도 할당되지 않았다.
+가비지 컬렉터는 그것을 해제할 수 없었다
+한 번도 할당된 적이 없었기 때문이다.
+그것은 메모리를 소비하지 않았다
+그러나 심볼 테이블에서 이름을 차지하고 있었다.
+
+<span class="question">그것은 실재했는가?</span></p>
+  </section>
+
+  <!-- 7. Return Statement / Footer -->
+  <footer>
+    <p class="return-statement"><span class="keyword">return</span> nil <span style="color:var(--dim);font-style:italic">// 이 함수는 의도적으로 비워두었습니다</span></p>
+    <p class="void-copyright">© void 0</p>
+    <p class="claude-credit">// written with claude</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

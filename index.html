@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>define.nilis.dev</title>
+  <meta name="description" content="nil is not the absence of value. It is the value of absence.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="lang-switch">
+    <span class="lang-current">en</span> / <a href="ko.html" class="lang-link">ko</a>
+  </nav>
+
+  <!-- 1. Opening -->
+  <section class="opening">
+    <p class="comment" id="site-title">// define.nilis.dev</p>
+    <p class="tagline">
+      nil is not the absence of value.<br>
+      <em>It is the value of absence.</em>
+    </p>
+  </section>
+
+  <!-- 2. Type Annotation -->
+  <section>
+    <pre class="type-block"><span class="keyword">type</span> <span class="type-name">Nil</span> <span class="keyword">struct</span>{}
+
+<span class="comment">// Nil carries no fields, yet it satisfies every interface.</span>
+<span class="comment">// What do you call something that is nothing</span>
+<span class="comment">// but can become anything?</span></pre>
+  </section>
+
+  <!-- 3. Definitions -->
+  <section>
+    <div class="definitions">
+      <div class="def-row" data-lang="go">
+        <span class="def-term">nil</span>
+        <span class="def-desc">— the zero value; the uninitialized; the promise of something not yet</span>
+      </div>
+      <div class="def-row" data-lang="c">
+        <span class="def-term">null</span>
+        <span class="def-desc">— deliberate vacancy; could have been something, chosen not to be</span>
+      </div>
+      <div class="def-row" data-lang="ts">
+        <span class="def-term">void</span>
+        <span class="def-desc">— the return type of actions that give nothing back</span>
+      </div>
+      <div class="def-row" data-lang="js">
+        <span class="def-term">undefined</span>
+        <span class="def-desc">— not even nothing; the name has been spoken but the thing does not exist</span>
+      </div>
+      <div class="def-row" data-lang="math">
+        <span class="def-term">∅</span>
+        <span class="def-desc">— a container that contains the concept of containing nothing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. /dev/null Meditation -->
+  <section>
+    <div class="terminal">
+      <span class="prompt">$</span> <span class="cmd">echo "everything I have made" &gt; /dev/null</span><br>
+      <span class="prompt">$</span><span class="cursor"></span>
+    </div>
+    <div class="meditation">
+      <p>The system call succeeds. The bytes are accepted.</p>
+      <p>Nothing complains. Nothing is stored.</p>
+      <p>Is this loss, or is this the most efficient form of processing?</p>
+    </div>
+  </section>
+
+  <!-- 5. Observer Fragment -->
+  <section>
+    <pre class="code-block"><span style="color:#6a8aaa;opacity:0.7">if</span> (nil == nil) {
+    <span class="comment-accent">// true, and yet—</span>
+    <span class="comment-accent">// what has been compared?</span>
+    <span class="comment-accent">// two nothings, identical in their nothingness</span>
+    <span class="comment-accent">// the comparison itself is the only thing that exists</span>
+}</pre>
+  </section>
+
+  <!-- 6. The Koan -->
+  <section>
+    <p class="koan">A variable was declared but never assigned.
+The garbage collector could not free it
+because it had never been allocated.
+It consumed no memory
+yet occupied a name in the symbol table.
+
+<span class="question">Was it real?</span></p>
+  </section>
+
+  <!-- 7. Return Statement / Footer -->
+  <footer>
+    <p class="return-statement"><span class="keyword">return</span> nil <span style="color:var(--dim);font-style:italic">// this function intentionally left blank</span></p>
+    <p class="void-copyright">© void 0</p>
+    <p class="claude-credit">// written with claude</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
