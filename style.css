@@ -139,6 +139,7 @@ section.visible {
   display: inline-block;
   width: 8px;
   height: 14px;
+  margin-left: 10px;
   background: var(--accent);
   vertical-align: text-bottom;
   animation: blink 1.2s step-end infinite;
